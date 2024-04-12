@@ -1,0 +1,117 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: beige;
+    font-family: 'Great Vibes', cursive;
+}
+
+.container {
+    text-align: center;
+}
+
+.text-animation {
+    animation: bounce 2s infinite alternate ease-in-out;
+}
+
+.couronne-animation {
+    animation: bounce 2s infinite alternate ease-in-out;
+    width: 90px; /* Largeur de l'image */
+    height: auto; /* Hauteur ajustée automatiquement pour maintenir les proportions */
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
+}
+.pink-text {
+    color: pink;
+}
+
+.red-link {
+    color: red;
+    text-decoration: none; /* Pour enlever le soulignement par défaut du lien */
+}
+.buton-link {
+    color: rgb(241, 241, 241);
+    text-decoration: none; /* Pour enlever le soulignement par défaut du lien */
+}
+.red-link:hover {
+    text-decoration: underline; /* Ajouter un soulignement au survol */
+}
+/* Styles communs pour les deux pages */
+.container {
+    text-align: center;
+    display: none; /* Caché par défaut */
+}
+
+.text-animation {
+    animation: fade-in 1s forwards;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Styles spécifiques à la première page */
+.pink-text {
+    color: pink;
+}
+
+.red-link {
+    color: red;
+    text-decoration: none;
+}
+
+.red-link:hover {
+    text-decoration: underline;
+}
+
+/* Styles spécifiques à la deuxième page */
+.purple-button {
+    background-color: purple;
+    color: white;
+    border: none;
+    padding: 20px 40px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+.purple-button:hover {
+    background-color: darkpurple;
+}
+
+.green-button {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 20px;
+    margin-right: 10px; /* Espacement entre les boutons */
+}
+
+.red-button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 20px;
+}
